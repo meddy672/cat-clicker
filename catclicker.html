@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    
+  * {box-sizing:border-box;}
+
+
+  .bgimg, .mainimg:hover {
+
+    cursor: pointer;
+  }
+  .bgimg{
+
+    width: 80%;
+    height: 80%;
+  }
+  .mainimg{
+
+    width: 100%;
+    height: 570px;
+  }
+
+  </style>
+</head>
+<body>
+<main class="container">
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="col-sm-12"><h4>Kittens</h4></div>
+      <div class="sidebar" id="sidebar"></div>
+    </div>
+
+    <div class="col-lg-10" id="cat">
+      <h3 class="catnameHeading">Select Your Cat</h3>
+      <h6 class="mainCounter">0</h6>
+      <img src="http://via.placeholder.com/350x150" class="mainimg">
+
+        <div class="row" style="margin-top: 2%;">
+          <div class="col-lg-2">
+
+            <button type="button" id="adminModeBtn" class="btn btn-primary btn-lg">Admin</button>
+
+          </div>
+
+          <div class="col-lg-10">
+            <form class="form" id="editCatForm">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Edit Nmae" id="editCatName" name="edit-catname">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Edit Image URL" id="editCatImage" name="edit-imgurl">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Edit Click Count" id="editClickCount" name="edit-clickcount">
+              </div>
+
+              <div class="form-group">
+                <button class="btn btn-success" type="button" id="saveEditsBtn">Save</button>
+                <button class="btn btn-warning" type="button" id="cancelEditBtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- row -->
+</main>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
