@@ -12,8 +12,8 @@ The purpose of this application is to demostrate seperating concerns of logic. T
 To install Cat Clicker download or clone the repository. After you have the source files on you local machine locate the file catclicker.html and open it in your browser.
 
 ### Software
-Bootstrap v4
-JQuery 3.3.1
+- Bootstrap v4
+- JQuery 3.3.1
 
 
 
